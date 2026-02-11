@@ -48,7 +48,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         if (Memory == 9)
         {
-            RedWall.SetActive(false);
+            RedWall.SetActive(true);
         }
 
         if (BackwardsMemory == 9)
@@ -58,18 +58,18 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (PlanetMemory == 8)
         {
-            YellowBoxSpawner.SetActive(true);
+            YellowBoxSpawner.SetActive(false);
         }
 
-        if (Hotline == 4 && BlueGem == null)
-        {
-            HintGem1.SetActive(true);
-        }
+        //if (Hotline == 4 && BlueGem == null)
+        //{
+            //HintGem1.SetActive(true);
+        //}
 
-        if (FoodHelp == 3 && YellowGem == null)
-        {
-            HintGem2.SetActive(true);
-        }
+        //if (FoodHelp == 3 && YellowGem == null)
+        //{
+            //HintGem2.SetActive(true);
+        //}
     }
 
     IEnumerator MemoryLights()
