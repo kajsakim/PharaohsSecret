@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Box
-  - Yellow
-  - Blue
+  - Obstacles
+  - ObjToPush
   layers:
   - Default
   - TransparentFX
@@ -43,21 +42,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: background
-    uniqueID: 3328754281
-    locked: 0
-  - name: wall-decoration
-    uniqueID: 2198758655
-    locked: 0
-  - name: player
-    uniqueID: 3522486471
-    locked: 0
-  - name: haikus
-    uniqueID: 4234680633
-    locked: 0
-  - name: foreground
-    uniqueID: 662364485
     locked: 0
   m_RenderingLayers:
   - Default
