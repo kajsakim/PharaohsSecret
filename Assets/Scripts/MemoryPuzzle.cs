@@ -7,8 +7,6 @@ public class MemoryPuzzle : MonoBehaviour
     private int Memory;
     private int BackwardsMemory;
     private int PlanetMemory;
-    private int Hotline;
-    private int FoodHelp;
 
     public GameObject Light1;
     public GameObject Light2;
@@ -28,14 +26,9 @@ public class MemoryPuzzle : MonoBehaviour
     public GameObject Memory7;
     public GameObject Memory8;
     public GameObject Memory9;
-    public GameObject RedWall;
-    public GameObject BlueBoxSpawner;
-    public GameObject YellowBoxSpawner;
-    private RevealHaiku2 Increase;
-    public GameObject YellowGem;
-    public GameObject BlueGem;
-    public GameObject HintGem1;
-    public GameObject HintGem2;
+    public GameObject SecondMemory;
+    public GameObject ThirdMemory;
+    public GameObject ExitDoor;
     public GameObject PuzzleReset;
 
     public float Waiting;
@@ -48,28 +41,18 @@ public class MemoryPuzzle : MonoBehaviour
     {
         if (Memory == 9)
         {
-            RedWall.SetActive(true);
+            SecondMemory.SetActive(true);
         }
 
         if (BackwardsMemory == 9)
         {
-            BlueBoxSpawner.SetActive(true);
+            ThirdMemory.SetActive(true);
         }
 
         if (PlanetMemory == 8)
         {
-            YellowBoxSpawner.SetActive(false);
+            ExitDoor.SetActive(false);
         }
-
-        //if (Hotline == 4 && BlueGem == null)
-        //{
-            //HintGem1.SetActive(true);
-        //}
-
-        //if (FoodHelp == 3 && YellowGem == null)
-        //{
-            //HintGem2.SetActive(true);
-        //}
     }
 
     IEnumerator MemoryLights()
@@ -119,8 +102,6 @@ public class MemoryPuzzle : MonoBehaviour
         Memory = 0;
         BackwardsMemory = 0;
         PlanetMemory = 0;
-        Hotline = 0;
-        FoodHelp = 0;
         Memory1.SetActive(false);
         Memory2.SetActive(false);
         Memory3.SetActive(false);
@@ -147,8 +128,6 @@ public class MemoryPuzzle : MonoBehaviour
         Memory = 0;
         BackwardsMemory = 0;
         PlanetMemory = 0;
-        Hotline = 0;
-        FoodHelp = 0;
         Memory1.SetActive(true);
         Memory2.SetActive(true);
         Memory3.SetActive(true);
@@ -201,17 +180,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        if (Hotline == 3)
-        {
-            Hotline++;
-        }
-
-        else
-        {
-            Hotline += 1000;
-        }
-
-        FoodHelp += 1000;
+       
 
             CheckMemories();
     }
@@ -248,25 +217,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        if (Hotline == 0)
-        {
-            Hotline++;
-        }
-
-        else
-        {
-            Hotline += 1000;
-        }
-
-        if (FoodHelp == 1)
-        {
-            FoodHelp++;
-        }
-
-        else
-        {
-            FoodHelp += 1000;
-        }
+       
 
     }
 
@@ -302,9 +253,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        Hotline += 1000;
-
-        FoodHelp += 1000;
+       
     }
 
     public void FourMars()
@@ -339,17 +288,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        Hotline += 1000;
-
-        if (FoodHelp == 2)
-        {
-            FoodHelp++;
-        }
-
-        else
-        {
-            FoodHelp += 1000;
-        }
+       
 
         CheckMemories();
     }
@@ -386,9 +325,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        Hotline += 1000;
-
-        FoodHelp += 1000;
+        
     }
 
     public void SixSaturn()
@@ -423,9 +360,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        Hotline += 1000;
-
-        FoodHelp += 1000;
+        
     }
 
     public void SevenUranus()
@@ -460,17 +395,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        if (Hotline == 1)
-        {
-            Hotline++;
-        }
-
-        else
-        {
-            Hotline += 1000;
-        }
-
-        FoodHelp += 1000;
+       
     }
 
     public void EightNeptune()
@@ -505,17 +430,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        Hotline += 1000;
-
-        if (FoodHelp == 0)
-        {
-            FoodHelp++;
-        }
-
-        else
-        {
-            FoodHelp += 1000;
-        }
+       
 
             CheckMemories();
     }
@@ -542,17 +457,7 @@ public class MemoryPuzzle : MonoBehaviour
             BackwardsMemory += 1000;
         }
 
-        if (Hotline == 2)
-        {
-            Hotline++;
-        }
-
-        else
-        {
-            Hotline += 1000;
-        }
-
-            FoodHelp += 1000;
+       
 
         CheckMemories();
     }
