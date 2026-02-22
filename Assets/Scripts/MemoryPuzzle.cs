@@ -26,6 +26,7 @@ public class MemoryPuzzle : MonoBehaviour
     public GameObject Memory7;
     public GameObject Memory8;
     public GameObject Memory9;
+    public GameObject FirstMemory;
     public GameObject SecondMemory;
     public GameObject ThirdMemory;
     public GameObject ExitDoor;
@@ -42,17 +43,39 @@ public class MemoryPuzzle : MonoBehaviour
         if (Memory == 9)
         {
             SecondMemory.SetActive(true);
+            FirstMemory.SetActive(false);
         }
 
-        if (BackwardsMemory == 9)
+        if (BackwardsMemory == 9 && GameObject.Find("BackwardsMemory"))
         {
             ThirdMemory.SetActive(true);
+            SecondMemory.SetActive(false);
         }
 
-        if (PlanetMemory == 8)
+        if (PlanetMemory == 8 && GameObject.Find("PlanetMemory"))
         {
             ExitDoor.SetActive(false);
+            ThirdMemory.SetActive(false);
         }
+
+        if (Memory >= 1000 && GameObject.Find("FirstMemory"))
+        {
+            StopCoroutine(MemoryLights());
+            ResetPuzzle();
+        }
+
+        if (BackwardsMemory >= 1000 && GameObject.Find("BackwardsMemory"))
+        {
+            StopCoroutine(MemoryLights());
+            ResetPuzzle();
+        }
+
+        if (PlanetMemory >= 1000 && GameObject.Find("PlanetMemory"))
+        {
+            StopCoroutine(MemoryLights());
+            ResetPuzzle();
+        }
+
     }
 
     IEnumerator MemoryLights()
@@ -84,15 +107,6 @@ public class MemoryPuzzle : MonoBehaviour
         Light9.SetActive(true);
         yield return new WaitForSeconds(Waiting);
         Light9.SetActive(false);
-        Memory1.SetActive(true);
-        Memory2.SetActive(true);
-        Memory3.SetActive(true);
-        Memory4.SetActive(true);
-        Memory5.SetActive(true);
-        Memory6.SetActive(true);
-        Memory7.SetActive(true);
-        Memory8.SetActive(true);
-        Memory9.SetActive(true);
         PuzzleReset.SetActive(true);
     }
 
@@ -102,15 +116,6 @@ public class MemoryPuzzle : MonoBehaviour
         Memory = 0;
         BackwardsMemory = 0;
         PlanetMemory = 0;
-        Memory1.SetActive(false);
-        Memory2.SetActive(false);
-        Memory3.SetActive(false);
-        Memory4.SetActive(false);
-        Memory5.SetActive(false);
-        Memory6.SetActive(false);
-        Memory7.SetActive(false);
-        Memory8.SetActive(false);
-        Memory9.SetActive(false);
         Light1.SetActive(false);
         Light2.SetActive(false);
         Light3.SetActive(false);
@@ -128,15 +133,6 @@ public class MemoryPuzzle : MonoBehaviour
         Memory = 0;
         BackwardsMemory = 0;
         PlanetMemory = 0;
-        Memory1.SetActive(true);
-        Memory2.SetActive(true);
-        Memory3.SetActive(true);
-        Memory4.SetActive(true);
-        Memory5.SetActive(true);
-        Memory6.SetActive(true);
-        Memory7.SetActive(true);
-        Memory8.SetActive(true);
-        Memory9.SetActive(true);
         Light1.SetActive(false);
         Light2.SetActive(false);
         Light3.SetActive(false);
@@ -217,7 +213,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-       
+        CheckMemories();
 
     }
 
@@ -253,7 +249,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-       
+        CheckMemories();
     }
 
     public void FourMars()
@@ -325,7 +321,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        
+        CheckMemories();
     }
 
     public void SixSaturn()
@@ -360,7 +356,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-        
+        CheckMemories();
     }
 
     public void SevenUranus()
@@ -395,7 +391,7 @@ public class MemoryPuzzle : MonoBehaviour
             PlanetMemory += 1000;
         }
 
-       
+        CheckMemories();
     }
 
     public void EightNeptune()
