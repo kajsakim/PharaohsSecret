@@ -58,22 +58,76 @@ public class MemoryPuzzle : MonoBehaviour
             ThirdMemory.SetActive(false);
         }
 
-        if (Memory >= 1000 && GameObject.Find("FirstMemory"))
+        if (Memory >= 999 && GameObject.Find("FirstMemory"))
         {
-            StopCoroutine(MemoryLights());
+            StopAllCoroutines();
             ResetPuzzle();
+            Light1.SetActive(false);
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
         }
 
-        if (BackwardsMemory >= 1000 && GameObject.Find("BackwardsMemory"))
+        if (BackwardsMemory >= 999 && GameObject.Find("BackwardsMemory"))
         {
-            StopCoroutine(MemoryLights());
+            StopAllCoroutines();
             ResetPuzzle();
+            Light1.SetActive(false);
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
         }
 
-        if (PlanetMemory >= 1000 && GameObject.Find("PlanetMemory"))
+        if (PlanetMemory >= 999 && GameObject.Find("PlanetMemory"))
         {
-            StopCoroutine(MemoryLights());
+            StopAllCoroutines();
             ResetPuzzle();
+            Light1.SetActive(false);
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
         }
 
     }
@@ -146,6 +200,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void OneMercury()
     {
+        StopAllCoroutines();
+        Memory1.SetActive(false);
+
         if (Memory == 0)
         {
             Memory ++;
@@ -154,6 +211,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
+            Light1.SetActive(false);
         }
 
         if (BackwardsMemory == 8)
@@ -164,6 +222,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light1.SetActive(false);
         }
 
         if (PlanetMemory == 4)
@@ -174,6 +233,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light1.SetActive(false);
         }
 
        
@@ -183,6 +243,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void TwoVenus()
     {
+        StopAllCoroutines();
+        Memory2.SetActive(false);
+
         if (Memory == 1)
         {
             Memory ++;
@@ -191,6 +254,7 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
+            Light2.SetActive(false);
         }
 
         if (BackwardsMemory == 7)
@@ -201,6 +265,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light2.SetActive(false);
         }
 
         if (PlanetMemory == 2)
@@ -211,6 +276,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light2.SetActive(false);
         }
 
         CheckMemories();
@@ -219,6 +285,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void ThreeEarth()
     {
+        StopAllCoroutines();
+        Memory3.SetActive(false);
+
         if (Memory == 2)
         {
             Memory++;
@@ -227,6 +296,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
+            Light3.SetActive(false);
         }
 
         if (BackwardsMemory == 6)
@@ -237,6 +307,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light3.SetActive(false);
         }
 
         if (PlanetMemory == 5)
@@ -247,6 +318,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light3.SetActive(false);
         }
 
         CheckMemories();
@@ -254,6 +326,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void FourMars()
     {
+        StopAllCoroutines();
+        Memory4.SetActive(false);
+
         if (Memory == 3)
         {
             Memory++;
@@ -262,6 +337,7 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
+            Light4.SetActive(false);
         }
 
         if (BackwardsMemory == 5)
@@ -272,6 +348,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light4.SetActive(false);
         }
 
         if (PlanetMemory == 0)
@@ -282,6 +359,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light4.SetActive(false);
         }
 
        
@@ -291,6 +369,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void FiveJupiter()
     {
+        StopAllCoroutines();
+        Memory5.SetActive(false);
+
         if (Memory == 4)
         {
             Memory++;
@@ -299,6 +380,7 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
+            Light5.SetActive(false);
         }
 
         if (BackwardsMemory == 4)
@@ -309,6 +391,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light5.SetActive(false);
         }
 
         if (PlanetMemory == 6)
@@ -319,6 +402,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light5.SetActive(false);
         }
 
         CheckMemories();
@@ -326,6 +410,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void SixSaturn()
     {
+        StopAllCoroutines();
+        Memory6.SetActive(false);
+
         if (Memory == 5)
         {
             Memory++;
@@ -334,6 +421,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
+            Light6.SetActive(false);
         }
 
         if (BackwardsMemory == 3)
@@ -344,6 +432,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light6.SetActive(false);
         }
 
         if (PlanetMemory == 1)
@@ -354,6 +443,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light6.SetActive(false);
         }
 
         CheckMemories();
@@ -361,6 +451,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void SevenUranus()
     {
+        StopAllCoroutines();
+        Memory7.SetActive(false);
+
         if (Memory == 6)
         {
             Memory++;
@@ -369,6 +462,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
+            Light7.SetActive(false);
         }
 
         if (BackwardsMemory == 2)
@@ -379,6 +473,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light7.SetActive(false);
         }
 
         if (PlanetMemory == 3)
@@ -389,6 +484,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light7.SetActive(false);
         }
 
         CheckMemories();
@@ -396,6 +492,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void EightNeptune()
     {
+        StopAllCoroutines();
+        Memory8.SetActive(false);
+
         if (Memory == 7)
         {
             Memory++;
@@ -404,6 +503,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
+            Light8.SetActive(false);
         }
 
         if (BackwardsMemory == 1)
@@ -414,6 +514,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light8.SetActive(false);
         }
 
         if (PlanetMemory == 7)
@@ -424,6 +525,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
+            Light8.SetActive(false);
         }
 
        
@@ -433,6 +535,9 @@ public class MemoryPuzzle : MonoBehaviour
 
     public void NinePluto()
     {
+        StopAllCoroutines();
+        Memory9.SetActive(false);
+
         if (Memory == 8)
         {
             Memory++;
@@ -441,6 +546,7 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
+            Light9.SetActive(false);
         }
 
         if (BackwardsMemory == 0)
@@ -451,6 +557,7 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
+            Light9.SetActive(false);
         }
 
        
