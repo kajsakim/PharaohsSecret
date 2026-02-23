@@ -60,7 +60,15 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (Memory >= 999 && GameObject.Find("FirstMemory"))
         {
-            StopAllCoroutines();
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -71,20 +79,20 @@ public class MemoryPuzzle : MonoBehaviour
             Light7.SetActive(false);
             Light8.SetActive(false);
             Light9.SetActive(false);
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
         }
 
         if (BackwardsMemory >= 999 && GameObject.Find("BackwardsMemory"))
         {
-            StopAllCoroutines();
+            
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -95,20 +103,19 @@ public class MemoryPuzzle : MonoBehaviour
             Light7.SetActive(false);
             Light8.SetActive(false);
             Light9.SetActive(false);
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
         }
 
         if (PlanetMemory >= 999 && GameObject.Find("PlanetMemory"))
         {
-            StopAllCoroutines();
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -119,15 +126,6 @@ public class MemoryPuzzle : MonoBehaviour
             Light7.SetActive(false);
             Light8.SetActive(false);
             Light9.SetActive(false);
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
         }
 
     }
@@ -202,6 +200,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory1.SetActive(false);
+        Light1.SetActive(true);
 
         if (Memory == 0)
         {
@@ -211,7 +210,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
-            Light1.SetActive(false);
         }
 
         if (BackwardsMemory == 8)
@@ -222,7 +220,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light1.SetActive(false);
         }
 
         if (PlanetMemory == 4)
@@ -233,7 +230,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light1.SetActive(false);
         }
 
        
@@ -245,6 +241,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory2.SetActive(false);
+        Light2.SetActive(true);
 
         if (Memory == 1)
         {
@@ -254,7 +251,6 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
-            Light2.SetActive(false);
         }
 
         if (BackwardsMemory == 7)
@@ -265,7 +261,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light2.SetActive(false);
         }
 
         if (PlanetMemory == 2)
@@ -276,7 +271,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light2.SetActive(false);
         }
 
         CheckMemories();
@@ -287,6 +281,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory3.SetActive(false);
+        Light3.SetActive(true);
 
         if (Memory == 2)
         {
@@ -296,7 +291,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
-            Light3.SetActive(false);
         }
 
         if (BackwardsMemory == 6)
@@ -307,7 +301,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light3.SetActive(false);
         }
 
         if (PlanetMemory == 5)
@@ -318,7 +311,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light3.SetActive(false);
         }
 
         CheckMemories();
@@ -328,6 +320,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory4.SetActive(false);
+        Light4.SetActive(true);
 
         if (Memory == 3)
         {
@@ -337,7 +330,6 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
-            Light4.SetActive(false);
         }
 
         if (BackwardsMemory == 5)
@@ -348,7 +340,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light4.SetActive(false);
         }
 
         if (PlanetMemory == 0)
@@ -359,7 +350,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light4.SetActive(false);
         }
 
        
@@ -371,6 +361,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory5.SetActive(false);
+        Light5.SetActive(true);
 
         if (Memory == 4)
         {
@@ -380,7 +371,6 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
-            Light5.SetActive(false);
         }
 
         if (BackwardsMemory == 4)
@@ -391,7 +381,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light5.SetActive(false);
         }
 
         if (PlanetMemory == 6)
@@ -402,7 +391,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light5.SetActive(false);
         }
 
         CheckMemories();
@@ -412,6 +400,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory6.SetActive(false);
+        Light6.SetActive(true);
 
         if (Memory == 5)
         {
@@ -421,7 +410,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
-            Light6.SetActive(false);
         }
 
         if (BackwardsMemory == 3)
@@ -432,7 +420,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light6.SetActive(false);
         }
 
         if (PlanetMemory == 1)
@@ -443,7 +430,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light6.SetActive(false);
         }
 
         CheckMemories();
@@ -453,6 +439,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory7.SetActive(false);
+        Light7.SetActive(true);
 
         if (Memory == 6)
         {
@@ -462,7 +449,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
-            Light7.SetActive(false);
         }
 
         if (BackwardsMemory == 2)
@@ -473,7 +459,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light7.SetActive(false);
         }
 
         if (PlanetMemory == 3)
@@ -484,7 +469,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light7.SetActive(false);
         }
 
         CheckMemories();
@@ -494,6 +478,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory8.SetActive(false);
+        Light8.SetActive(true);
 
         if (Memory == 7)
         {
@@ -503,7 +488,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             Memory += 1000;
-            Light8.SetActive(false);
         }
 
         if (BackwardsMemory == 1)
@@ -514,7 +498,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light8.SetActive(false);
         }
 
         if (PlanetMemory == 7)
@@ -525,7 +508,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             PlanetMemory += 1000;
-            Light8.SetActive(false);
         }
 
        
@@ -537,6 +519,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         Memory9.SetActive(false);
+        Light9.SetActive(true);
 
         if (Memory == 8)
         {
@@ -546,7 +529,6 @@ public class MemoryPuzzle : MonoBehaviour
         else 
         {
             Memory += 1000;
-            Light9.SetActive(false);
         }
 
         if (BackwardsMemory == 0)
@@ -557,7 +539,6 @@ public class MemoryPuzzle : MonoBehaviour
         else
         {
             BackwardsMemory += 1000;
-            Light9.SetActive(false);
         }
 
        
