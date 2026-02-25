@@ -15,21 +15,21 @@ public class PlayerSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        RespawnPlayer();
-    }
+    //void Update()
+    //{
+        //RespawnPlayer();
+    //}
 
-    void RespawnPlayer()
-    {   //Checks if Object is in the scene
-        bool Found = GameObject.Find("Player(Clone)");
+    //void RespawnPlayer()
+    //{   //Checks if Object is in the scene
+        //bool Found = GameObject.Find("Player 1(Clone)");
         //String name is the name of the Object in the scene (not the prefab)
 
 
-        if (Found == false)
-        {
-            Instantiate(PrefabToSpawn, transform.position, SpawnRotation);
-        }
+        //if (Found == false)
+        //{
+            //Instantiate(PrefabToSpawn, transform.position, SpawnRotation);
+        //}
         //If Object is not found in the scene Instantiate Object
-    }
+    //}
 }

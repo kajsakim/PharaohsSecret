@@ -205,6 +205,14 @@ public class MemoryPuzzle : MonoBehaviour
         if (Memory == 0)
         {
             Memory ++;
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
         }
 
         else
@@ -342,9 +350,17 @@ public class MemoryPuzzle : MonoBehaviour
             BackwardsMemory += 1000;
         }
 
-        if (PlanetMemory == 0)
+        if (PlanetMemory == 0 && GameObject.Find("PlanetMemory"))
         {
             PlanetMemory++;
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light1.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
         }
 
         else
@@ -531,9 +547,17 @@ public class MemoryPuzzle : MonoBehaviour
             Memory += 1000;
         }
 
-        if (BackwardsMemory == 0)
+        if (BackwardsMemory == 0 && GameObject.Find("BackwardsMemory"))
         {
             BackwardsMemory++;
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light1.SetActive(false);
         }
 
         else
