@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpingPower);
 
-            //JumpSource.PlayOneShot(JumpClip);
+            JumpSource.PlayOneShot(JumpClip);
         }
 
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
