@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Yellow
+  - Blue
   layers:
   - Default
   - TransparentFX
@@ -40,6 +42,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1669226881
+    locked: 0
+  - name: wall-decoration
+    uniqueID: 2487610497
+    locked: 0
+  - name: middle-ground
+    uniqueID: 2959213795
+    locked: 0
+  - name: player
+    uniqueID: 3085633759
+    locked: 0
+  - name: haikus
+    uniqueID: 1583737015
+    locked: 0
+  - name: foreground
+    uniqueID: 4037635133
     locked: 0
   m_RenderingLayers:
   - Default

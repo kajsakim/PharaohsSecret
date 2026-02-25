@@ -52,7 +52,7 @@ public class PlayerMovement_Se : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded() == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpingPower);
-            //JumpSource.PlayOneShot(JumpClip);
+            JumpSource.PlayOneShot(JumpClip);
 
             _animator.SetBool("Is_Jumping", !IsGrounded()); // animation for if character is jumping
 
