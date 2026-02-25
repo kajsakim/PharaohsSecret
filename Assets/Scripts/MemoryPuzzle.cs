@@ -33,6 +33,11 @@ public class MemoryPuzzle : MonoBehaviour
     public GameObject PuzzleReset;
 
     public float Waiting;
+
+    public AudioClip RightAnswer;
+    public AudioClip WrongAnswer;
+    public AudioSource Indicator;
+
     void Start()
     {
 
@@ -42,20 +47,26 @@ public class MemoryPuzzle : MonoBehaviour
     {
         if (Memory == 9 && GameObject.Find("FirstMemory"))
         {
-            SecondMemory.SetActive(true); //add success sound here
+            SecondMemory.SetActive(true);
             FirstMemory.SetActive(false);
+
+            Indicator.PlayOneShot(RightAnswer); //success sound
         }
 
         if (BackwardsMemory == 9 && GameObject.Find("BackwardsMemory"))
         {
-            ThirdMemory.SetActive(true); //add usccess sound here
+            ThirdMemory.SetActive(true);
             SecondMemory.SetActive(false);
+
+            Indicator.PlayOneShot(RightAnswer); //success sound
         }
 
         if (PlanetMemory == 8 && GameObject.Find("PlanetMemory"))
         {
-            ExitDoor.SetActive(false); //add success sound
+            ExitDoor.SetActive(false);
             ThirdMemory.SetActive(false);
+
+            Indicator.PlayOneShot(RightAnswer); //success sound
         }
 
         if (Memory >= 999 && GameObject.Find("FirstMemory"))
@@ -180,7 +191,7 @@ public class MemoryPuzzle : MonoBehaviour
         StartCoroutine(MemoryLights());
     }
 
-    public void ResetPuzzle() //add fail sound here
+    public void ResetPuzzle()
     {
         Memory = 0;
         BackwardsMemory = 0;
@@ -194,6 +205,8 @@ public class MemoryPuzzle : MonoBehaviour
         Light7.SetActive(false);
         Light8.SetActive(false);
         Light9.SetActive(false);
+
+        Indicator.PlayOneShot(WrongAnswer); //fail sound
     }
 
     public void OneMercury()
