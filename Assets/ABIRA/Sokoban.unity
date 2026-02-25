@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 808932336}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Obstacles
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 1896758077}
   m_Layer: 0
   m_Name: Box
-  m_TagString: ObjToPush
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
