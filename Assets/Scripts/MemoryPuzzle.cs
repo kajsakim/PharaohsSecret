@@ -40,7 +40,7 @@ public class MemoryPuzzle : MonoBehaviour
 
     void CheckMemories()
     {
-        if (Memory == 9)
+        if (Memory == 9 && GameObject.Find("FirstMemory"))
         {
             SecondMemory.SetActive(true);
             FirstMemory.SetActive(false);
