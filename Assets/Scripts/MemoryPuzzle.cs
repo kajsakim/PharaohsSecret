@@ -42,19 +42,19 @@ public class MemoryPuzzle : MonoBehaviour
     {
         if (Memory == 9 && GameObject.Find("FirstMemory"))
         {
-            SecondMemory.SetActive(true);
+            SecondMemory.SetActive(true); //add success sound here
             FirstMemory.SetActive(false);
         }
 
         if (BackwardsMemory == 9 && GameObject.Find("BackwardsMemory"))
         {
-            ThirdMemory.SetActive(true);
+            ThirdMemory.SetActive(true); //add usccess sound here
             SecondMemory.SetActive(false);
         }
 
         if (PlanetMemory == 8 && GameObject.Find("PlanetMemory"))
         {
-            ExitDoor.SetActive(false);
+            ExitDoor.SetActive(false); //add success sound
             ThirdMemory.SetActive(false);
         }
 
@@ -180,7 +180,7 @@ public class MemoryPuzzle : MonoBehaviour
         StartCoroutine(MemoryLights());
     }
 
-    public void ResetPuzzle()
+    public void ResetPuzzle() //add fail sound here
     {
         Memory = 0;
         BackwardsMemory = 0;
