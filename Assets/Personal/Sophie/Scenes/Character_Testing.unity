@@ -21339,13 +21339,10 @@ MonoBehaviour:
   Memory7: {fileID: 167221200}
   Memory8: {fileID: 1503844882}
   Memory9: {fileID: 40270101}
-  RedWall: {fileID: 2024843693}
-  BlueBoxSpawner: {fileID: 415965701}
-  YellowBoxSpawner: {fileID: 395313375}
-  YellowGem: {fileID: 0}
-  BlueGem: {fileID: 0}
-  HintGem1: {fileID: 0}
-  HintGem2: {fileID: 0}
+  FirstMemory: {fileID: 0}
+  SecondMemory: {fileID: 0}
+  ThirdMemory: {fileID: 0}
+  ExitDoor: {fileID: 0}
   PuzzleReset: {fileID: 354901032}
   Waiting: 1
 --- !u!1 &1377005521
@@ -32856,53 +32853,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3818358320063451619, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.21594596
-      objectReference: {fileID: 0}
-    - target: {fileID: 3818358320063451619, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.4592476
-      objectReference: {fileID: 0}
-    - target: {fileID: 3818358320063451619, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0009022951
-      objectReference: {fileID: 0}
-    - target: {fileID: 3818358320063451619, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0057258606
-      objectReference: {fileID: 0}
-    - target: {fileID: 4287281376195266161, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2419531
-      objectReference: {fileID: 0}
     - target: {fileID: 4932261258240864216, guid: def433cbd9f7d1747b6568242582917b, type: 3}
       propertyPath: m_Name
       value: Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5137123784781445512, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.19311503
-      objectReference: {fileID: 0}
-    - target: {fileID: 5137123784781445512, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.014
-      objectReference: {fileID: 0}
-    - target: {fileID: 5137123784781445512, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.233
-      objectReference: {fileID: 0}
-    - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32943,10 +32896,6 @@ PrefabInstance:
     - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6875083401029641669, guid: def433cbd9f7d1747b6568242582917b, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
