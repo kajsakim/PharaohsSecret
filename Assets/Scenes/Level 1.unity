@@ -2714,16 +2714,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 12, y: -26, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 32, y: -26, z: 0}
     second:
       serializedVersion: 2
@@ -2754,16 +2744,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 12, y: -25, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 32, y: -25, z: 0}
     second:
       serializedVersion: 2
@@ -2785,16 +2765,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -13, y: -24, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 12, y: -24, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -3154,6 +3124,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 12, y: -15, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 32, y: -15, z: 0}
     second:
       serializedVersion: 2
@@ -3174,6 +3154,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 12, y: -14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 32, y: -14, z: 0}
     second:
       serializedVersion: 2
@@ -3185,6 +3175,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -13, y: -13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 12, y: -13, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -3823,17 +3823,17 @@ CompositeCollider2D:
   - m_Collider: {fileID: 88333699}
     m_ColliderPaths:
     - - X: 130333336
-        Y: -149666656
-      - X: 119666664
-        Y: -149666656
-      - X: 119666664
         Y: -259666672
       - X: -119666664
         Y: -259666672
       - X: -119666664
         Y: -120333336
+      - X: 119666664
+        Y: -120333336
+      - X: 119666664
+        Y: -230333328
       - X: 130333336
-        Y: -120333336
+        Y: -230333328
       - X: 130333336
         Y: -109666664
       - X: -130333336
@@ -3875,12 +3875,12 @@ CompositeCollider2D:
       - {x: 31.966665, y: -10.966696}
       - {x: 31.966694, y: -27.033335}
     - - {x: 13.033304, y: -27.033335}
-      - {x: 13.033304, y: -14.966666}
-      - {x: 11.966666, y: -14.966695}
-      - {x: 11.966637, y: -25.966667}
+      - {x: 13.033304, y: -25.966667}
       - {x: -11.966666, y: -25.966639}
       - {x: -11.966637, y: -12.033334}
-      - {x: 13.033334, y: -12.033304}
+      - {x: 11.966666, y: -12.033363}
+      - {x: 11.966696, y: -23.033333}
+      - {x: 13.033334, y: -23.033304}
       - {x: 13.033304, y: -10.966666}
       - {x: -13.033334, y: -10.966696}
       - {x: -13.033304, y: -27.033335}
@@ -7464,7 +7464,7 @@ Tilemap:
   m_GameObject: {fileID: 395313375}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 12, y: -15, z: 0}
+  - first: {x: 12, y: -26, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -7474,7 +7474,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 12, y: -14, z: 0}
+  - first: {x: 12, y: -25, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -7484,7 +7484,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 12, y: -13, z: 0}
+  - first: {x: 12, y: -24, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -7497,10 +7497,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 3
-    m_Data: {fileID: 11400000, guid: 191f93531045b6042a23d10ea11cb082, type: 2}
+    m_Data: {fileID: 11400000, guid: f54d91336daab9f419ba228a7598ffe9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 3
-    m_Data: {fileID: -1212850764, guid: bb806c6ea4886fb41946304a646489e2, type: 3}
+    m_Data: {fileID: -1475712257, guid: 5c29f69f442789545b273a3337ebe11a, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 3
     m_Data:
@@ -7526,8 +7526,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: -15, z: 0}
-  m_Size: {x: 14, y: 15, z: 1}
+  m_Origin: {x: 0, y: -26, z: 0}
+  m_Size: {x: 14, y: 26, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -13706,7 +13706,6 @@ MonoBehaviour:
   SecondMemory: {fileID: 1402092445}
   ThirdMemory: {fileID: 290998012}
   ExitDoor: {fileID: 0}
-  PuzzleReset: {fileID: 5427664}
   Waiting: 1
   RightAnswer: {fileID: 0}
   WrongAnswer: {fileID: 0}
@@ -25554,8 +25553,7 @@ MonoBehaviour:
   FirstMemory: {fileID: 266475090}
   SecondMemory: {fileID: 2024843693}
   ThirdMemory: {fileID: 415965701}
-  ExitDoor: {fileID: 0}
-  PuzzleReset: {fileID: 354901032}
+  ExitDoor: {fileID: 395313375}
   Waiting: 1
   RightAnswer: {fileID: 8300000, guid: a7171c6d591c8c24d91bf31ab64fd6ea, type: 3}
   WrongAnswer: {fileID: 8300000, guid: 2b6eab75225de9948a398a238744d21f, type: 3}

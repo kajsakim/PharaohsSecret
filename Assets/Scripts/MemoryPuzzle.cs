@@ -30,7 +30,7 @@ public class MemoryPuzzle : MonoBehaviour
     public GameObject SecondMemory;
     public GameObject ThirdMemory;
     public GameObject ExitDoor;
-    public GameObject PuzzleReset;
+    
 
     public float Waiting;
 
@@ -71,15 +71,6 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (Memory >= 999 && GameObject.Find("FirstMemory"))
         {
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -94,16 +85,6 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (BackwardsMemory >= 999 && GameObject.Find("BackwardsMemory"))
         {
-            
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -118,15 +99,6 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (PlanetMemory >= 999 && GameObject.Find("PlanetMemory"))
         {
-            Memory1.SetActive(true);
-            Memory2.SetActive(true);
-            Memory3.SetActive(true);
-            Memory4.SetActive(true);
-            Memory5.SetActive(true);
-            Memory6.SetActive(true);
-            Memory7.SetActive(true);
-            Memory8.SetActive(true);
-            Memory9.SetActive(true);
             ResetPuzzle();
             Light1.SetActive(false);
             Light2.SetActive(false);
@@ -170,7 +142,7 @@ public class MemoryPuzzle : MonoBehaviour
         Light9.SetActive(true);
         yield return new WaitForSeconds(Waiting);
         Light9.SetActive(false);
-        PuzzleReset.SetActive(true);
+        
     }
 
     public void StartMemoryLights()
@@ -196,6 +168,15 @@ public class MemoryPuzzle : MonoBehaviour
         Memory = 0;
         BackwardsMemory = 0;
         PlanetMemory = 0;
+        Memory1.SetActive(true);
+        Memory2.SetActive(true);
+        Memory3.SetActive(true);
+        Memory4.SetActive(true);
+        Memory5.SetActive(true);
+        Memory6.SetActive(true);
+        Memory7.SetActive(true);
+        Memory8.SetActive(true);
+        Memory9.SetActive(true);
         Light1.SetActive(false);
         Light2.SetActive(false);
         Light3.SetActive(false);
@@ -578,7 +559,10 @@ public class MemoryPuzzle : MonoBehaviour
             BackwardsMemory += 1000;
         }
 
-       
+        if (GameObject.Find("PlanetMemory"))
+        {
+            ResetPuzzle();
+        }
 
         CheckMemories();
     }
