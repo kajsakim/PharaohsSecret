@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 2828955988430093046}
   - component: {fileID: 4963388515455719552}
   - component: {fileID: -3537695005327286091}
-  - component: {fileID: 3547254539111156673}
   - component: {fileID: -5939429631263937761}
   - component: {fileID: 7217160608635817569}
   m_Layer: 7
@@ -311,7 +310,7 @@ MonoBehaviour:
   Destroyed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3547254539111156673}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BlueHaikuLink, Assembly-CSharp
         m_MethodName: Death
         m_Mode: 1
@@ -326,18 +325,6 @@ MonoBehaviour:
   OnExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3547254539111156673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4932261258240864216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb2e015c517afdd4f957724653df1c51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueHaikuLink
 --- !u!95 &-5939429631263937761
 Animator:
   serializedVersion: 7
