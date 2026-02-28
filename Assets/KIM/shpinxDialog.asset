@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5295a6ec0dc5204c98e836737a63ec9, type: 3}
+  m_Name: shpinxDialog
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialog
+  NPCname: Guardian Sphinx
+  sentences:
+  - Who dares enter this sacred resting grounds?
+  - From here, there is no returning. If you wish to leave you must prove your worth!
+  - 'If you are found wanting, you may never leave.
+
+    However, pass my trials
+    and you may once again see the light.'
+  - 'If you are found wanting, you may never leave.
+
+    However, pass my trials
+    and you may once again see the light.'
+  - Go forth! Show me your fortitude!
+  autoProgressLines: 01010100
+  typingSpeed: 0.05
+  autoProgressDelay: 1.5
