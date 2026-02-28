@@ -21,6 +21,7 @@ public class sphinxColl : MonoBehaviour
         if(collision.CompareTag("player") && !NPC.isDialogActive)  //(if player collides with trigger and dialog is not active, run start dialog in NPC script)
         {
             //start dialog function in NPC script
+            NPC.startDialog();
         }
     }
 }
