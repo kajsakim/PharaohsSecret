@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Credits_Scrolling_Se : MonoBehaviour
 {
-    public float Scroll_Speed = 42.0f; // the speed that the text moves at
-    public float Scroll_Timer = 20.0f; // the duration of the timer that will send the player back to the main menu.
+    public float Scroll_Speed = 62.0f; // the speed that the text moves at
+    public float Scroll_Timer = 42.0f; // the duration of the timer that will send the player back to the main menu.
 
     private RectTransform Rect_Transform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

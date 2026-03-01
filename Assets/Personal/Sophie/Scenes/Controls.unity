@@ -390,8 +390,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 988454f5bd8219d45905afa650226633, type: 2}
+  m_sharedMaterial: {fileID: -468842314685484171, guid: 988454f5bd8219d45905afa650226633, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -415,8 +415,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -531,8 +531,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Movement\n\nLeft\nRight\nJump\n\n\nInteract \nExit game"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 988454f5bd8219d45905afa650226633, type: 2}
+  m_sharedMaterial: {fileID: -468842314685484171, guid: 988454f5bd8219d45905afa650226633, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
