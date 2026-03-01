@@ -14,7 +14,7 @@ public class loadLevel : MonoBehaviour
         enterPopup.SetActive(true);
         if (NPC.isDialogDone && Input.GetKeyUp(KeyCode.E))
         {
-            SceneManager.LoadSceneAsync(3);
+            SceneManager.LoadSceneAsync(3);//this aint working, dunno why yet.
         }
     }
     public void OnTriggerExit2D(Collider2D collision)
