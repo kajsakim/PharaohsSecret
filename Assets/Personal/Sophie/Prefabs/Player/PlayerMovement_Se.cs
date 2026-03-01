@@ -8,6 +8,7 @@ public class PlayerMovement_Se : MonoBehaviour
     public float speed = 8f;
     float JumpingPower = 16f;
     bool isFacingRight = true;
+    public GameObject InteractButton;
 
     bool IsWallSliding;
     float WallSlideSpeed = 2f;
@@ -71,6 +72,16 @@ public class PlayerMovement_Se : MonoBehaviour
         if (!IsWallJumping)
         {
             Flip();
+        }
+
+        if (!isFacingRight)
+        {
+            InteractButton.transform.localRotation = Quaternion.Euler(0, 0, 180);
+        }
+
+        else
+        {
+            InteractButton.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 
 
@@ -168,7 +179,7 @@ public class PlayerMovement_Se : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
-
+            
 
         }
     }

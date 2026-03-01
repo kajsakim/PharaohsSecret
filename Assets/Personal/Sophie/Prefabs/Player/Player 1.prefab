@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement_Se
   speed: 8
+  InteractButton: {fileID: 7379879354605076093}
   JumpClip: {fileID: 8300000, guid: 0681f5afe29c1434e81f254f74dac757, type: 3}
   JumpSource: {fileID: 7217160608635817569}
   QuitMenu: {fileID: 0}
