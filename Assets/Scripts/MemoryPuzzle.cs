@@ -115,6 +115,16 @@ public class MemoryPuzzle : MonoBehaviour
 
     IEnumerator MemoryLights()
     {
+        Memory1.SetActive(true);
+        Memory2.SetActive(true);
+        Memory3.SetActive(true);
+        Memory4.SetActive(true);
+        Memory5.SetActive(true);
+        Memory6.SetActive(true);
+        Memory7.SetActive(true);
+        Memory8.SetActive(true);
+        Memory9.SetActive(true);
+
         Light1.SetActive(true);
         yield return new WaitForSeconds(Waiting);
         Light1.SetActive(false);
