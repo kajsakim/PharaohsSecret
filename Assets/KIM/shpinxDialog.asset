@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialog
   NPCname: Guardian Sphinx
   sentences:
-  - Who dares enter this sacred resting grounds?
-  - From here, there is no returning. If you wish to leave you must prove your worth!
+  - Who dares enter these sacred resting grounds?
+  - From here, there is no return. If you wish to leave you must prove your worth!
   - 'If you are found wanting, you may never leave.
 
     However, pass my trials
