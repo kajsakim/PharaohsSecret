@@ -6772,7 +6772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   ReloadMainMenu: 27
-  ThisSceneName: MainMenu
+  ThisSceneName: Book
   OtherScene: 
   LoadDelay: 0
   CanReloadScene: 1
