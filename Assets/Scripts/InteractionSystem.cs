@@ -9,11 +9,23 @@ public class InteractionSystem : MonoBehaviour
     public IntroHaikuInteractable IntroHaiku1;
 
     public SecondHaikuInteractable SecondHaiku;
+
+    public GameObject InteractButton;
     
 
     // Update is called once per frame
     void Update()
     {
+        if (CurrentInteractable != null)
+        {
+            InteractButton.SetActive(true);
+        }
+
+        else
+        {
+            InteractButton.SetActive(false);
+        }
+
         if (Input.GetKeyDown("e") && CurrentInteractable != null)
         {
             CurrentInteractable.OnInteract.Invoke();
