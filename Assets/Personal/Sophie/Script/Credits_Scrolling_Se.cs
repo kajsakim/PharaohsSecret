@@ -23,5 +23,9 @@ public class Credits_Scrolling_Se : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
