@@ -10648,8 +10648,8 @@ MonoBehaviour:
 
     N '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
+  m_sharedMaterial: {fileID: -2582029861813768242, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13876,8 +13876,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mars, Saturn, Venus\n\nUranus, Mercury, Earth \n\nJupiter, Neptune"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
+  m_sharedMaterial: {fileID: -2582029861813768242, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13942,7 +13942,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1473411421
@@ -14545,8 +14545,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ecneuqes eht wolloF
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
+  m_sharedMaterial: {fileID: -2582029861813768242, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -13545,8 +13545,8 @@ MonoBehaviour:
   m_text: "Sample Text here to check size and whatnot, dont know if it should be
     bigger or smaller. \nwowo!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
+  m_sharedMaterial: {fileID: -2582029861813768242, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -28234,7 +28234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1529484788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37846,8 +37846,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
-  m_sharedMaterial: {fileID: 4448411141764919551, guid: 122c7faba231f8d4d8f2bc99ff49e6dc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
+  m_sharedMaterial: {fileID: -2582029861813768242, guid: e5dcce34f7216cb4aa5c1bc722a3722d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37871,8 +37871,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 43.6
+  m_fontSizeBase: 43.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
