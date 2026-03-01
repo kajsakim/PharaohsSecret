@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Personal/Sophie/Scenes/Book.unity
     guid: f7449c8d500ffe44799cfef2c922efc2
   - enabled: 1
-    path: Assets/Personal/Sophie/Scenes/How_To_Play.unity
+    path: Assets/Personal/Sophie/Scenes/Controls.unity
     guid: 8a45270e0cbddbb4cbecc933ac63213f
   - enabled: 1
     path: Assets/KIM/entry-room.unity
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KIM/memoryPuzzle_kk.unity
     guid: 4acf801a49f02ef4dac7326b1d18f993
+  - enabled: 1
+    path: Assets/Personal/Sophie/Scenes/Victory.unity
+    guid: 7fd94758a599d9b49a7207f49bdc4c1e
   - enabled: 1
     path: Assets/Personal/Sophie/Scenes/Credits.unity
     guid: 42ebed4aaf3019946a097a2e90a18ded

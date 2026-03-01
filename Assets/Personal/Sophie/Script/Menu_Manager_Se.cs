@@ -8,7 +8,7 @@ public class Menu_Manager_Se : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    public void PlaySceneHowToPlay ()
+    public void PlaySceneControls ()
     {
         SceneManager.LoadScene(1);
     }
