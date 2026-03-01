@@ -18,10 +18,22 @@ public class sphinxColl : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("player") && !NPC.isDialogActive)  //(if player collides with trigger and dialog is not active, run start dialog in NPC script)
+        if(collision.CompareTag("player") && !NPC.isDialogDone)  //(if player collides with trigger and dialog is not done, run start dialog in NPC script)
         {
-            //start dialog function in NPC script
             NPC.startDialog();
+            /*
+             I dont know if this will work the same with collisson as trigger instead of button/interact
+            if (NPC.isDialogActive)
+            {
+                //if dialog not done but has already started, continue
+                NPC.nextLine();
+            }
+            else
+            {
+                //start dialog function in NPC script
+                NPC.startDialog();
+            }*/
+                
         }
     }
 }

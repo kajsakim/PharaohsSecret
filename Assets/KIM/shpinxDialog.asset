@@ -20,10 +20,6 @@ MonoBehaviour:
 
     However, pass my trials
     and you may once again see the light.'
-  - 'If you are found wanting, you may never leave.
-
-    However, pass my trials
-    and you may once again see the light.'
   - Go forth! Show me your fortitude!
   autoProgressLines: 01010100
   typingSpeed: 0.05
