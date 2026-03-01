@@ -17953,8 +17953,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028309263}
-  - component: {fileID: 2028309265}
   - component: {fileID: 2028309264}
+  - component: {fileID: 2028309265}
   m_Layer: 0
   m_Name: SwitchCam3-W
   m_TagString: Untagged
@@ -17971,7 +17971,7 @@ Transform:
   m_GameObject: {fileID: 2028309262}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.98, y: -47.93, z: 0}
+  m_LocalPosition: {x: 29.28, y: -47.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18032,18 +18032,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028309262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d350674fe4079c4eba9982a4fc3a518, type: 3}
+  m_Script: {fileID: 11500000, guid: 89ddc7935d0cf9044a87166d6c69ecbd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScreenSwap
-  Camera1: {fileID: 1825070119}
-  Camera2: {fileID: 1080442053}
-  SpawnPoint1: {fileID: 814436861}
-  SpawnPoint2: {fileID: 0}
-  BlueSpawn1: {fileID: 0}
-  BlueSpawn2: {fileID: 0}
-  YellowSpawn1: {fileID: 0}
-  AudioSource1: {fileID: 21881513}
-  AudioSource2: {fileID: 923692737}
+  m_EditorClassIdentifier: Assembly-CSharp::LoadWinScene
 --- !u!1 &2039583944
 GameObject:
   m_ObjectHideFlags: 0
