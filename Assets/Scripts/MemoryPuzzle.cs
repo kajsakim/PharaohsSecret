@@ -8,6 +8,8 @@ public class MemoryPuzzle : MonoBehaviour
     private int BackwardsMemory;
     private int PlanetMemory;
 
+    public int ErrorCounter;
+
     public GameObject Light1;
     public GameObject Light2;
     public GameObject Light3;
@@ -196,6 +198,7 @@ public class MemoryPuzzle : MonoBehaviour
         Light7.SetActive(false);
         Light8.SetActive(false);
         Light9.SetActive(false);
+        ErrorCounter++;
 
         Indicator.PlayOneShot(WrongAnswer); //fail sound
     }
