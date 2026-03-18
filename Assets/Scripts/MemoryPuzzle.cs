@@ -53,6 +53,25 @@ public class MemoryPuzzle : MonoBehaviour
             FirstMemory.SetActive(false);
 
             Indicator.PlayOneShot(RightAnswer); //success sound
+
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
+            Light1.SetActive(false);
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
         }
 
         if (BackwardsMemory == 9 && GameObject.Find("BackwardsMemory"))
@@ -61,6 +80,25 @@ public class MemoryPuzzle : MonoBehaviour
             SecondMemory.SetActive(false);
 
             Indicator.PlayOneShot(RightAnswer); //success sound
+
+            Memory1.SetActive(true);
+            Memory2.SetActive(true);
+            Memory3.SetActive(true);
+            Memory4.SetActive(true);
+            Memory5.SetActive(true);
+            Memory6.SetActive(true);
+            Memory7.SetActive(true);
+            Memory8.SetActive(true);
+            Memory9.SetActive(true);
+            Light1.SetActive(false);
+            Light2.SetActive(false);
+            Light3.SetActive(false);
+            Light4.SetActive(false);
+            Light5.SetActive(false);
+            Light6.SetActive(false);
+            Light7.SetActive(false);
+            Light8.SetActive(false);
+            Light9.SetActive(false);
         }
 
         if (PlanetMemory == 8 && GameObject.Find("PlanetMemory"))
@@ -69,6 +107,8 @@ public class MemoryPuzzle : MonoBehaviour
             ThirdMemory.SetActive(false);
 
             Indicator.PlayOneShot(RightAnswer); //success sound
+
+            Memory9.SetActive(false);
         }
 
         if (Memory >= 999 && GameObject.Find("FirstMemory"))
