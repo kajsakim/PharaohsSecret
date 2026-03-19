@@ -9,6 +9,8 @@ public class ScreenSwap : MonoBehaviour
     public MemoryPuzzle MemoryPuzzle;
     public TMP_Text ErrorCounterScore;
     public GameObject Attempts;
+    public GameObject PlanetHint;
+    public GameObject PlanetText;
 
     private void Start()
     {
@@ -21,8 +23,10 @@ public class ScreenSwap : MonoBehaviour
             Camera1.SetActive(false);
             Camera2.SetActive(true);
             Destroy(GameObject.Find("Player1(clone)"));
-            ErrorCounterScore.text = "Congratulations! Attempts:" + MemoryPuzzle.ErrorCounter.ToString();
+            ErrorCounterScore.text = "Congratulations! Attempts: " + MemoryPuzzle.ErrorCounter.ToString();
             Attempts.SetActive(true);
+            PlanetHint.SetActive(false);
+            PlanetText.SetActive(false);
 
         }
     }
