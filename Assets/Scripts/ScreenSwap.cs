@@ -22,11 +22,11 @@ public class ScreenSwap : MonoBehaviour
         {
             Camera1.SetActive(false);
             Camera2.SetActive(true);
-            Destroy(GameObject.Find("Player1(clone)"));
-            ErrorCounterScore.text = "Congratulations! Attempts: " + MemoryPuzzle.ErrorCounter.ToString();
+            ErrorCounterScore.text = "Congratulations! Mistakes: " + MemoryPuzzle.ErrorCounter.ToString();
             Attempts.SetActive(true);
             PlanetHint.SetActive(false);
             PlanetText.SetActive(false);
+            Destroy(GameObject.Find("Player 1(clone)"));
 
         }
     }
