@@ -1,31 +1,29 @@
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class ScreenSwap : MonoBehaviour
 {
     public GameObject Camera1;
     public GameObject Camera2;
-    public GameObject SpawnPoint1;
-    public GameObject SpawnPoint2;
-    public GameObject BlueSpawn1;
-    public GameObject BlueSpawn2;
-    public GameObject YellowSpawn1;
-    public GameObject AudioSource1;
-    public GameObject AudioSource2;
-    
+    public MemoryPuzzle MemoryPuzzle;
+    public TMP_Text ErrorCounterScore;
+    public GameObject Attempts;
+
+    private void Start()
+    {
+        MemoryPuzzle = GameObject.FindGameObjectWithTag("MemoryPuzzle").GetComponent<MemoryPuzzle>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             Camera1.SetActive(false);
             Camera2.SetActive(true);
-            SpawnPoint1.SetActive(false);
-            SpawnPoint2.SetActive(true);
-            BlueSpawn1.SetActive(false);
-            YellowSpawn1.SetActive(false);
-            AudioSource1.SetActive(false);
-            AudioSource2.SetActive(true);
-            Destroy(GameObject.Find("BlueBox(Clone)"));
-            Destroy(GameObject.Find("YellowBox(Clone)"));
+            Destroy(GameObject.Find("Player1(clone)"));
+            ErrorCounterScore.text = "Congratulations! Attempts:" + MemoryPuzzle.ErrorCounter.ToString();
+            Attempts.SetActive(true);
+
         }
     }
 
