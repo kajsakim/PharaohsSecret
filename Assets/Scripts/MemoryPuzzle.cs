@@ -49,6 +49,7 @@ public class MemoryPuzzle : MonoBehaviour
     {
         if (Memory == 9 && GameObject.Find("FirstMemory"))
         {
+            BackwardsMemory = 0;
             SecondMemory.SetActive(true);
             FirstMemory.SetActive(false);
 
@@ -76,6 +77,7 @@ public class MemoryPuzzle : MonoBehaviour
 
         if (BackwardsMemory == 9 && GameObject.Find("BackwardsMemory"))
         {
+            PlanetMemory = 0;
             ThirdMemory.SetActive(true);
             SecondMemory.SetActive(false);
 
