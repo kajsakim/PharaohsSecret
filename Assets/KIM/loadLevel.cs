@@ -6,12 +6,12 @@ public class loadLevel : MonoBehaviour
 {
     public BoxCollider2D levelTrigger;
     public NPC NPC;
-    public GameObject enterPopup;
+    //public GameObject enterPopup;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnTriggerStay2D(Collider2D collision)
     {
-        enterPopup.SetActive(true);
+        //enterPopup.SetActive(true);
         if (Input.GetKey(KeyCode.E))
         {
             if (NPC.isDialogDone)
@@ -25,18 +25,18 @@ public class loadLevel : MonoBehaviour
             //}
         }
     }
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        enterPopup.SetActive(false);
-    }
-    void Start()
-    {
-        enterPopup.SetActive(false);
-    }
+    //public void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    enterPopup.SetActive(false);
+    //}
+    //void Start()
+    //{
+    //    enterPopup.SetActive(false);
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
+    //// Update is called once per frame
+    //void Update()
+    //{
         
-    }
+    //}
 }

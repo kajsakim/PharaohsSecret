@@ -22,5 +22,5 @@ MonoBehaviour:
     and you may once again see the light.'
   - Go forth! Show me your fortitude!
   autoProgressLines: 01010100
-  typingSpeed: 0.05
+  typingSpeed: 0.035
   autoProgressDelay: 1.5

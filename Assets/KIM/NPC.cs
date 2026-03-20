@@ -17,6 +17,7 @@ public class NPC : MonoBehaviour
     private bool isTyping;
     public bool isDialogActive;
     public bool isDialogDone;
+    public GameObject DoorTrigger;
 
     private void Start()
     {
@@ -65,17 +66,23 @@ public class NPC : MonoBehaviour
         {
             endDialog();
         }
+
+        if (dialogIndex >= 3)
+        {
+            endDialog();
+        }
     }
 
     public void endDialog()
     {
-        StopAllCoroutines();
+        //StopAllCoroutines();
         isDialogActive = false;
         isDialogDone = true;
-        dialogText.SetText("");
-        dialogPanel.SetActive(false);
+        //dialogText.SetText("");
+        //dialogPanel.SetActive(false);
         door.SetActive(false);
         doorAudio.PlayOneShot(doorSound);
+        DoorTrigger.SetActive(true);
         
 
     }
@@ -99,5 +106,10 @@ public class NPC : MonoBehaviour
             nextLine();
         }
 
+      
+
     }
+
+   
+   
 }
